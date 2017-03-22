@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-before_action :authenticate_user!, :only => [:new, :create]
+before_action :authenticate_user!, :only => [:new, :create, :edit, :destroy]
 
 
   def new
@@ -20,6 +20,7 @@ before_action :authenticate_user!, :only => [:new, :create]
       render :new
     end
   end
+
 
   private
 
